@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 plt.style.use('fast')
 
-data=pd.read_csv('Maharashtra Latest Covid Cases.csv', index_col=0)
+data=pd.read_csv('Data source/Maharashtra Latest Covid Cases.csv', index_col=0)
 fig, ax=plt.subplots()
 
 ax.bar(data.index, data['Recovered'], label='Recovered')
